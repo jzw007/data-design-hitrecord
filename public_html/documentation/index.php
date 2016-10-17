@@ -41,7 +41,7 @@
 					<ul>
 						<li>challengeId (Primary Key)</li>
 						<li>challengeDateAndTime</li>
-						<li>ChallengeAuthor(foriegn Key)</li>
+						<li>challengeAuthor(foriegn Key)</li>
 						<li>N-to-M relationships with user</li>
 					</ul>
 				</li>
@@ -49,7 +49,7 @@
 					<ul>
 						<li>userId(Primary Key)</li>
 						<li>userName</li>
-						<li>userResponce</li>
+						<li>userResponse</li>
 						<li>userAvatar</li>
 						<li>N-to-M relationships with challenge</li>
 					</ul>
@@ -57,11 +57,12 @@
 				<li> responce
 					<ul>
 						<li>responseChallengId(foriegn key)</li>
-						<li>responseDateAndTime</li>
+						<li>responseDateTime</li>
 						<li>responseData</li>
 						<li>responseAuthor (foriegn key)</li>
 					</ul>
 			</ul>
+			
 		</main>
 	</body>
 </html>
