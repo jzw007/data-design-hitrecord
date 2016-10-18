@@ -30,7 +30,7 @@
 				<li>Ryan sets up his Nikon and sets the lights as needed for his short scene and hits record. "yes puns intended" </li>
 				<li>Lights, Camera, Improve, once Ryan is done filming his scene he will critique it to see if there is anything he can do to improve it.</li>
 				<li>After the critiquing part, once he is satisfied as much as any artist can be with his own work, he will upload his scene in responce to the original challenge he accepted.</li>
-				<li>Now if wunder boy decides to use Ryans submission for the challenge which is the ultimate goal, Ryan will get a paycheck.</li>
+				<li>Now if wunder boy decides to use Ryans submission for the challenge which is the ultimate goal, Ryan will get a paycheck and more importantly icrease his experience.</li>
 			</ol>
 			<!--begin section 3-->
 			<header>
@@ -54,14 +54,15 @@
 						<li>N-to-M relationships with challenge</li>
 					</ul>
 				</li>
-				<li> responce
+				<li> response
 					<ul>
-						<li>responseChallengId(foriegn key)</li>
+						<li>responseId(foriegn key)</li>
 						<li>responseDateTime</li>
 						<li>responseData</li>
 						<li>responseAuthor (foriegn key)</li>
 					</ul>
 			</ul>
+			<img src="...entities-and-attributes-table.png" alt="diagram">;
 			
 		</main>
 	</body>
