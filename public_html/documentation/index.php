@@ -61,7 +61,7 @@
 						<li>responseData</li>
 						<li>responseAuthor (foriegn key)</li>
 					</ul>
-			<img src="/public_html/media/entities-and-attributes-table.png" alt="diagram">;
+			<img src="../media/entities-and-attributes-table.png" alt="diagram">;
 			</ul>
 		</main>
 	</body>

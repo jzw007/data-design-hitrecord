@@ -22,6 +22,6 @@ CREATE TABLE response (
 	reponseUser INT UNSIGNED                NOT NULL,
 	responseUserEmail VARCHAR(128)              NOT NULL,
 	INDEX (responseUserId),
-	FOREIGN KEY (responseUserId),
-	FOREIGN KEY (),
+	FOREIGN KEY (responseUserId) REFERENCES user(userId),
+	FOREIGN KEY (responseChallengeId) REFERENCES challenge(challengeId)
 );
