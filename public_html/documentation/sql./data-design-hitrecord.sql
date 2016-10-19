@@ -21,7 +21,7 @@ CREATE TABLE challenge(
 );
 CREATE TABLE response (
 	responseId    INT UNSIGNED AUTO_INCREMENT NOT NULL,
-	responseUserId  int UNSIGNED            NOT NULL,
+	responseUserId  INT UNSIGNED            NOT NULL,
 	reponseChallengeId INT UNSIGNED                NOT NULL,
 	INDEX (responseUserId),
 	INDEX (responseId),
