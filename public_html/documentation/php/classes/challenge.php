@@ -104,7 +104,6 @@ class challenge{
 	}
 	/**
 	 * email of the author of the challenge, this is a foriegn key
-	 * @return string
 	 * mutator method
 	 * @param string $newChallengeEmail new value of email challenge
 	 * @throws UnexpectedValueException if $newChallengeEmail is not valid

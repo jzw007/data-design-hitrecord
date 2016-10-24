@@ -64,28 +64,28 @@ class response{
 	 * id for the response to the challenge.php, primary key
 	 * @return int
 	 */
-	public function getResponceId() {
+	public function getResponseId() {
 		return $this->responseId;
 	}
 	/**
-	 * mutator method for responce id
-	 * @param int $newResponceId new value of responce id
-	 * @throws \RangeException if $newResponceId is not positive
-	 * @throws \TypeError if $newResponceId is not an integer
+	 * mutator method for response id
+	 * @param int $newResponceId new value of response id
+	 * @throws \RangeException if $newResponseId is not positive
+	 * @throws \TypeError if $newResponseId is not an integer
 	 */
-	public function setResponceId(int $newResponceId){
-		//verify responce id is positive
-		if ($newResponceId ===0){
-			throw (new RangeException('responce id is not positive'));
+	public function setResponseId(int $newResponseId){
+		//verify response id is positive
+		if ($newResponseId ===0){
+			throw (new RangeException('response id is not positive'));
 		}
-		//convert and store responce id
-		this->responseUserId = $newResponceId;
+		//convert and store response id
+		$this->responseUserId = $newResponseId;
 	}
 	/**
 	 * id of the user for this response, foreign key
 	 * @return string
 	 */
-	public function getResponceUserId() {
+	public function getResponseUserId() {
 		return $this->responseUserId;
 	}
 	/**
@@ -94,101 +94,101 @@ class response{
 	 * @throws \RangeException if $newResponceUserId is not positive
 	 * @throws \TypeError if $newResponceUserId is not an string
 	 **/
-	public function setResponceUserId(string $newResponceUserId){
+	public function setResponceUserId(string $newResponseUserId){
 		//verify responce user id is positive
-		$newResponceUserId = trim($newResponceUserId);
-		$newResponceUserId = filter_var($newResponceUserId, FILTER_SANITIZE_STRING,FILTER_FLAG_NO_ENCODE_QUOTES);
-		if (empty($newResponceUserId === true)){
-			throw (new \InvalidArgumentException('if $newResponceUserId is empty or insecure'));
+		$newResponseUserId = trim($newResponseUserId);
+		$newResponseUserId = filter_var($newResponseUserId, FILTER_SANITIZE_STRING,FILTER_FLAG_NO_ENCODE_QUOTES);
+		if (empty($newResponseUserId === true)){
+			throw (new \InvalidArgumentException('if $newResponseUserId is empty or insecure'));
 		}
-		//convert and store responce user id
-		this->$newResponceUserId;
+		//convert and store response user id
+		$this->$newResponseUserId;
 	}
 	/**
-	 * accessor method for responce challenge.php id
+	 * accessor method for response challenge.php id
 	 *
 	 * id of the challenge.php issued, foreign key
 	 * @return string
 	 **/
-	public function getResponceChallengeId() {
+	public function getResponseChallengeId() {
 		return $this->responseChallengeId;
 	}
 	/**
-	 * mutator method responce challenge.php id
-	 * @param string $newResponceChallengeId new value of responce challenge.php id
-	 * @throws \RangeException if $newResponceChallengeId is not positive
-	 * @throws \TypeError if $newResponceChallengeId is not a string
+	 * mutator method response challenge.php id
+	 * @param string $newResponseChallengeId new value of response challenge.php id
+	 * @throws \RangeException if $newResponseChallengeId is not positive
+	 * @throws \TypeError if $newResponseChallengeId is not a string
 	 **/
-	public function setResponceChallengeId(string $newResponceChallengeId){
-		//verify responce user id is positive
-		$newResponceChallengeId = trim($newResponceChallengeId);
-		$newResponceChallengeId = filter_var($newResponceChallengeId, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-		if (empty($newResponceChallengeId === true)){
-			throw (new \InvalidArgumentException('if $newResponceChallengeId is empty or insecure'));
+	public function setResponseChallengeId(string $newResponseChallengeId){
+		//verify response user id is positive
+		$newResponseChallengeId = trim($newResponseChallengeId);
+		$newResponseChallengeId = filter_var($newResponseChallengeId, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+		if (empty($newResponseChallengeId === true)){
+			throw (new \InvalidArgumentException('if $newResponseChallengeId is empty or insecure'));
 		}
-		// convert and store responce challenge.php id
-		this->$newResponceChallengeId;
+		// convert and store response challenge.php id
+		$this->$newResponseChallengeId;
 	}
 	/**
-	 * accessor method for responce user name
+	 * accessor method for response user name
 	 *
-	 * id of the responce user name, foreign key
+	 * id of the response user name, foreign key
 	 * @return string
 	 **/
-	public function getResponceUserName() {
+	public function getResponseUserName() {
 		return $this->responseUserName;
 	}
 	/**
-	 * mutator method responce user name
-	 * @param string $newResponceUserName new value of responce user name
-	 * @throws \RangeException if $newResponceUserName is not positive
-	 * @throws \TypeError if $newResponceUserName is not a string
+	 * mutator method response user name
+	 * @param string $newResponseUserName new value of response user name
+	 * @throws \RangeException if $newResponseUserName is not positive
+	 * @throws \TypeError if $newResponseUserName is not a string
 	 */
-	public function setResponceUserName(string $newResponceUserName){
-		//verify responce user name is positive
-		$newResponceUserName = trim($newResponceUserName);
-		$newResponceUserName = filter_var($newResponceUserName,FILTER_SANITIZE_STRING,FILTER_FLAG_NO_ENCODE_QUOTES);
-		if (empty($newResponceUserName === true)){
-			throw (new \InvalidArgumentException('if $newResponceUserName is empty of insecure'));
+	public function setResponseUserName(string $newResponseUserName){
+		//verify response user name is positive
+		$newResponseUserName = trim($newResponseUserName);
+		$newResponseUserName = filter_var($newResponseUserName,FILTER_SANITIZE_STRING,FILTER_FLAG_NO_ENCODE_QUOTES);
+		if (empty($newResponseUserName === true)){
+			throw (new \InvalidArgumentException('if $newResponseUserName is empty of insecure'));
 		}
 		// convert and store responce challenge.php id
-		this->$newResponceUserName;
+		$this->$newResponseUserName;
 	}
 
 	/**
 	 * accessor method for responce date and time
 	 * date and time of the responce sent, in PHP DateTime object
-	 * @return \DateTime value of responce date
+	 * @return \DateTime value of response date
 	 */
-	public function getResponceDateTime() {
+
+	public function getResponseDateTime() {
 		return $this->responseDateTime;
 	}
 	/**
-	 * mutator method for responce date
-	 * @param \DateTime|string|null $newResponceDateTime responce date as a DateTime object or string (or null to load the current time)
-	 * @throws \InvalidArgumentException if $newResponceDateTime is not a valid object or string
-	 * @throws \RangeException if $newResponceDateTime is a date that does not exist
+	 * mutator method for response date
+	 * @param \DateTime|string|null $newResponseDateTime response date as a DateTime object or string (or null to load the current time)
+	 * @throws \InvalidArgumentException if $newResponseDateTime is not a valid object or string
+	 * @throws \RangeException if $newResponseDateTime is a date that does not exist
 	 **/
-	public function setResponceDateTime ($newResponceDateTime = null){
+	public function setResponseDateTime ($newResponseDateTime = null){
 		//base case: if date is null, use current date and time
-		if($newResponceDateTime === null){
-			this->ResponceDateTime = new\DateTime();
+		if($newResponseDateTime === null){
+			$this->ResponseDateTime = new\DateTime();
 			return;
 		}
-		//store the responce date time
+		//store the response date time
 		try {
-			$newResponceDateTime = self::ßvalidateDateTime($newResponceDateTime);
+			$newResponseDateTime = self:: validateDateTime($newResponseDateTime);
 		} catch(\InvalidArgumentException $invalidArgument) {
 			throw(new \InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
 		} catch(\RangeException $range) {
 			throw(new \RangeException($range->getMessage(), 0, $range));
 		}
 		//store response date time
-		$this->responseDateTime = $newResponceDateTime;
+		$this->responseDateTime = $newResponseDateTime;
 
 
 	}
 
 }
 
-}
