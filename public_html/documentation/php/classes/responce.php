@@ -69,7 +69,7 @@ class response{
 	}
 	/**
 	 * mutator method for response id
-	 * @param int $newResponceId new value of response id
+	 * @param int $newResponseId new value of response id
 	 * @throws \RangeException if $newResponseId is not positive
 	 * @throws \TypeError if $newResponseId is not an integer
 	 */
@@ -94,7 +94,7 @@ class response{
 	 * @throws \RangeException if $newResponceUserId is not positive
 	 * @throws \TypeError if $newResponceUserId is not an string
 	 **/
-	public function setResponceUserId(string $newResponseUserId){
+	public function setResponseUserId(string $newResponseUserId){
 		//verify responce user id is positive
 		$newResponseUserId = trim($newResponseUserId);
 		$newResponseUserId = filter_var($newResponseUserId, FILTER_SANITIZE_STRING,FILTER_FLAG_NO_ENCODE_QUOTES);
